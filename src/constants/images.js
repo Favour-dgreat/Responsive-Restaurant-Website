@@ -21,8 +21,15 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import pchops from '../assets/pchops.png';
-
+import lg from '../assets/lg.png';
+import vector from '../assets/Vector.png';
+import frame3 from '../assets/Frame3.png';
+import frame14 from '../assets/Frame14.png';
 export default {
+  frame14,
+  vector,
+  frame3,
+  lg,
   bg,
   chef,
   G,

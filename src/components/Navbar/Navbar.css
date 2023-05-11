@@ -48,7 +48,7 @@
     background-color: var(--color-grey);
 }
 .app__navbar-smallscreen{
-    display: none;
+    /* display: none; */
 }
 
 .app__navbar-smallscreen_overlay{
@@ -61,6 +61,16 @@
     transition: 0.5s ease;
     flex-direction: column;
     z-index: 5
+}
+.my__btn{
+/* position: absolute; */
+width: 200px;
+height: 57px;
+left: 0px;
+top: 0px;
+color: #fff;
+border: none;
+background: #7909C3;
 }
 .app__navbar-smallscreen_overlay .overlay__close{
     font-size: 27px;
@@ -95,7 +105,7 @@
 
 @media screen and (max-width:1150px) {
     .app__navbar-links{
-       display: none; 
+       /* display: none;  */
     }
     .app__navbar-smallscreen {
         display: flex;
