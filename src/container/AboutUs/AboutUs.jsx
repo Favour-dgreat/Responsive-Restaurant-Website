@@ -52,7 +52,19 @@ const AboutUs = () => {
         seteye(true);
         }
         }; 
-    
+        const [agree, setAgree] = useState(false);
+
+        const checkboxHandler = () => {
+          // if agree === true, it will be set to false
+          // if agree === false, it will be set to true
+          setAgree(!agree);
+          // Don't miss the exclamation mark
+        }
+      
+        // When the button is clicked
+        const btnHandler = () => {
+          navigate('hire-creatives');
+        };
         return(
         <>
             <div className="container">
@@ -86,13 +98,17 @@ const AboutUs = () => {
                                     <input className={` ${warnpass ? "warning" : "" }`} type={pass} placeholder="Enter Password" name="password" value={inputs.password} onChange={inputEvent} />
                                     <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i>
                                 </div>
-                                <div className="recovery">
-                                    <p>Recovery Password</p>
-                                </div>
+                                <br/>
+                                <div>
+                                <input type="checkbox" className='lbl1' id="agree" onChange={checkboxHandler} />
+                                <label htmlFor="agree" className='lbl'> By creating an account you agree to the <a href="#"><span className='pp'>Terms & conditions</span></a> and <a href="#"><span className='pp'>Privacy Policy</span></a> </label>
+                               </div>
+
                                 <div className="btn">
-                                <Button className='my__btns' style={{ height: '40px', fontSize: '15px', width: '100%', cursor: 'pointer'}} onClick={() => navigate('register')}>Create account</Button>
+                                <Button className='my__btns' style={{ height: '40px', fontSize: '15px', width: '100%', cursor: 'pointer'}} disabled={!agree} onClick={btnHandler}>Create account</Button>
                                 </div>
-    
+                                <br/>
+                                <label htmlFor="agree" className='lbl2'> Already have an account? <a href="#"><span className='pp'>Log in</span></a> </label>
                             </form>
     
                             

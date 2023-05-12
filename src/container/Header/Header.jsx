@@ -1,5 +1,4 @@
 import React from 'react';
-import { SubHeading } from '../../components';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 

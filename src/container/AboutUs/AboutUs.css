@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://unpkg.com/react@17/umd/react.development.js');
+@import url('https://unpkg.com/react-dom@17/umd/react-dom.development.js');
+@import url('https://unpkg.com/@babel/standalone/babel.min.js');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 *{  margin:0;
     padding:0;
     box-sizing:border-box
@@ -7,7 +12,52 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh
+    min-height:100vh;
+
+}
+.pp{
+width: 134px;
+height: 19px;
+left: 271px;
+top: 0px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: -0.333333px;
+text-decoration-line: underline;
+color: #7909C3;
+}
+
+.lbl{
+left: 0px;
+top: 0px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: -0.333333px;
+color: rgba(17, 17, 17, 0.5);
+}
+
+.lbl1{
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+accent-color: #7909c3;
+background: #7909C3;
+border-radius: 20px;
+}
+
+.lbl2{
+margin: 0 80px;
+color: rgba(17, 17, 17, 0.8);
 }
 .container .card {
     height:500px;
@@ -29,9 +79,10 @@
 
     overflow:hidden
 }
-.left-side img{
-    height:100%;
-    width:100%;
+.right-side img{
+    margin-left:10rem;
+    height:80%;
+    width:80%;
     object-fit:cover
 }
 .container .card .right-side{
@@ -44,18 +95,29 @@
 }
 .main{
     display:none
-}.active{
+}
+.active{
     display:block
-}.register p{
+}
+.register p{
     display:flex;
     justify-content:end;
     font-size:13px;
     font-weight:600;
     color:#2a2739
-}.register p a{
+}
+.register p a{
     text-decoration:none;
     color:blue;
     margin-left:3px
+}
+.hello {
+    margin-top: 40px;
+    color: #2a2739
+}
+
+.hello h4 {
+    margin-top: 5px
 }
 .my__txt{
 position: absolute;
@@ -111,14 +173,8 @@ color: rgba(0, 0, 0, 0.5);
     
     color: rgba(0, 0, 0, 0.5);
     }
-.hello{
-    margin-top:40px;
-    /* text-align:center; */
-    color:#2a2739
-}
-.hello h4 {
-    margin-top:5px
-}.input_text1{
+
+    .input_text1{
     position:relative;
 
 }
@@ -147,30 +203,35 @@ input[type="password"]{
     font-size:13px;
     margin-left:10px;
     color:black
-}.danger{
+}
+.danger{
     display:none
 }
 .input_text p i{
     margin-right:2px
-}.fa-eye-slash{
-    position:absolute;
-    top:15px;
-    right:8px;
-    cursor:pointer;
-    color:black
 }
-.fa-eye{
-    position:absolute;
-    top:15px;
-    right:8px;
-    cursor:pointer;
-    color:#727286
+.fa-eye-slash {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+    color: #727286
 }
-.recovery{
-    margin-top:15px;
-    font-size:13px;
-    text-align:end
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    cursor: pointer;
+    color: #727286
 }
+
+.recovery {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: end
+}
+
 .btn{
     width: 100%;
     margin-top:15px
@@ -196,7 +257,7 @@ background: #7909C3;
 
 }
 
-.or{display:flex;
+/* .or{display:flex;
     justify-content:center;
     font-size:13px
 }
@@ -277,6 +338,6 @@ background: #7909C3;
         width: 80%;
         height: 320px;
     }
-} 
+}  */
 
 
